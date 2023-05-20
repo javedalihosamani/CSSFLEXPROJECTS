@@ -1,0 +1,34 @@
+@media(max-width:768px){
+    header{
+        padding: 20px;
+        flex-direction: column !important;
+    }
+    header>nav>ul{
+        flex-direction: column !important;
+    }
+    header>h3, header>nav{margin: 0px;}
+    .banner{
+        background: url(../images/mobile.jpg);
+    }
+    .banner>div{
+        padding: 20px;
+        line-height: 1.5;
+    }
+    .banner>div>p{font-size: 20px;}
+    .banner>div>h1{font-size: 40px;}
+    .aboutUs>div>p{margin: 20px;}
+
+    .contact form{flex-direction: row; margin: auto 20px;}
+    .contact form>div, .contact form>div:nth-child(5), .contact form>div:nth-child(6){width: 100%;}
+    .contact form>div>input{width: 100%; }
+}
+
+@media(min-width:769px) and (max-width:1200px){
+    header{
+        flex-direction: column !important;
+        justify-content: center !important;
+        padding: 20px;
+    }
+    header>h3, header>nav{margin: 0px;}
+    .aboutUs>div>p{margin: 20px;}
+}

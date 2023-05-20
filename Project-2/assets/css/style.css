@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    transition: ease-in-out 0.5s;
+}
+:root{
+    --yellow :#f1c01b ;
+    --black : #111 ;
+    --white: #fff ;
+}
+.banner{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) ,url(../images/desktop.jpg)no-repeat center;
+    background-size: 100%;
+    height: 80vh;
+    text-align: center;
+    line-height: 2;
+    color: var(--white);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner>div>h1{
+    font-size: 35px;
+}
+.banner>div>h1:hover{
+    color: var(--yellow);
+}
+.banner>div>p>span{
+    color: var(--yellow);
+}
+.banner>div>button{
+    border: 0px;
+    outline: 2px solid #fff;
+    margin: 10px;
+    padding: 15px 30px;
+    font-weight: bold;
+}
+.banner>div>button:hover{
+    background-color: transparent;
+    color: var(--white);
+}
+
+.company, .card, .getInTouch, footer{
+    padding: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.company>div, .card>div, .getInTouch>div, footer>div{
+    flex: 1;
+    line-height: 2;
+    overflow: hidden;
+}
+.company>div>img{
+    width: 100%;    
+}
+.company>div>img:hover{
+    transform: translateY(-10px)
+}
+.company>div>p{
+    color: grey;
+}
+.card{
+    background-color: var(--yellow);
+}
+.card>div>h1{
+    color: var(--white);
+}
+.card>div:hover p{
+    color: var(--white);
+}
+.getInTouch{
+    text-align: center;
+}
+.getInTouch>div{
+    margin: 0px 200px;
+}
+.getInTouch>div>form>input, .getInTouch>div>form>textarea{
+    width: 90%;
+    padding: 20px;
+    margin: 20px;
+    font-size: 15px;
+}
+.getInTouch>div>form>button{
+    padding: 20px 50px;
+    border: 0px;
+    background-color: var(--black);
+    color: var(--white);
+    outline: 2px solid var(--black);
+    margin-bottom: 20px;
+}
+.getInTouch>div>form>button:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
+footer{
+    background-color: var(--black);
+    color: var(--white);
+}
+footer [class*="fa-"]{
+    background-color: var(--white);
+    color: var(--black);
+    padding: 10px;
+    border-radius: 100%;
+    margin-right: 10px;
+    font-size: 20px;
+}
+footer [class*="fa-"]:hover{
+    transform: rotate(360deg);
+}

@@ -1,0 +1,186 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+h1{font-weight: 100;}
+:root{
+    --bg-color: #0c3c60;
+    --font-color: #fff;
+    --footer-bg-color: #072136;
+}
+/* FLEX-LAYOUT  */
+.container{
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    gap: 20px;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-items-end{
+    align-items: flex-end;
+}
+/* HEADER CODE */
+header{
+    background-color: var(--bg-color);
+}
+header>h3, header>nav{
+    margin: auto 50px;
+}
+header>h3{
+    color: var(--font-color);
+}
+header>nav>ul{
+    list-style-type: none;
+}
+header>nav>ul>li{
+    padding: 20px;
+}
+header>nav>ul>li>a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+/* BANNER CODE */
+.banner{
+    background: url(../images/banner.jpg) no-repeat center;
+    background-size: 100%;
+    height: 500px;
+}
+.banner>div{
+    background-color: var(--font-color);
+    display: inline-block;
+    padding: 30px;
+    text-align: center;
+    line-height: 2;
+}
+.banner>div>p{font-size: 25px;}
+.banner>div>h1{font-size: 50px;}
+.banner>div>button, .aboutUs>div>button{
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 1px solid var(--bg-color);
+    transition: 1s;
+}
+.banner>div>button:hover, .aboutUs>div>button:hover{
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+/* CARD */
+.card, .aboutUs, .ourClients, .testimonials, .contact{padding: 50px;}
+.container>.item{
+    flex: 1;
+    padding: 20px;
+    line-height: 2;
+    text-align: center;
+}
+.title{font-size: 35px;}
+.btn1{
+    background-color: var(--bg-color); 
+    padding: 15px 25px;
+    transition: 1s;
+    border: 1px solid var(--bg-color);
+    color: var(--font-color);
+    margin: 20px auto;
+}
+.btn1:hover{
+    background-color: var(--font-color);
+    color: var(--bg-color);
+}
+/* ABOUT US */
+.aboutUs{
+    background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)) ,url(../images/content.jpg) no-repeat center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.aboutUs>div>p{margin: 20px 150px;}
+
+/* OUR CLIENTS */
+.ourClients>h1, .testimonials>h1, .contact>h1{
+    text-align: center;
+    margin: 50px auto;
+}
+.ourClients [class*="fa-"]{
+    color: grey;
+    transition: 1s;
+}
+.ourClients [class*="fa-"]:hover{
+    color: var(--bg-color);
+    transform: scale(1.1);
+}
+/* TESTIMONIALS */
+.testimonials{
+    background-color: #F7F7F7;
+}
+.swiper {
+    width: 80%;
+    height: 200px;
+}
+.swiper-slide{
+    top: 50px;
+    line-height: 2;
+    text-align: center;
+}
+.swiper-slide cite{
+    font-weight: bold;
+    font-size: 20px;
+}
+/* CONTACT */
+.contact{
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+.contact form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin: auto 50px;
+}
+.contact form>div{
+    width: 48%;
+}
+.contact form>div:nth-child(5){
+    width: 77%;
+}
+.contact form>div:nth-child(6){
+    width: 20%;
+    align-self: end;
+}
+.contact form>div:nth-child(6)>button{
+    padding: 15px 20px;
+    width: 100%;
+    color: var(--bg-color);
+    font-weight: bold;
+    border: 1px solid var(--bg-color);
+    transition: 1s;
+}
+.contact form>div:nth-child(6)>button:hover{
+    background-color:transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.contact form>div>input, .contact form>div>textarea{
+    width: 100%;
+    background-color: transparent;
+    border: 1px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: var(--font-color);
+}
+.contact form>div:nth-child(5), .contact form>div:nth-child(6){
+    margin-bottom: 0px;
+}
+.contact form>div>input:focus, .contact form>div>textarea:focus{
+    outline: none;
+}
