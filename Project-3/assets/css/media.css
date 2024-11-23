@@ -1,0 +1,32 @@
+/* MOBILE VERSION */
+@media(max-width:768px){
+    .banner{
+        background: linear-gradient(rgba(55, 57, 69, 0.8), rgba(55, 57, 69, 0.8)) ,url(../images/mobile.jpg) no-repeat center;
+    }
+    .banner>section{
+        transform: translateY(50px);
+    }
+    /* FLEX */
+    .container{flex-flow: column;}
+    .banner>section>div{width: 100%;}
+    /* NAVIGATION */
+    .banner>header>.container{text-align: center;}
+    .banner>header>.container>ul>li{display: block;}
+    /* BANNER TEXT */    
+    .banner>section>div>h1{font-size: 30px;}
+    .banner>section>div>p{line-height: 1;}
+    .banner>section>div>button{margin-top: 20px;}
+    /* ICON SECTION */
+    .iconSection{text-align: center;}
+    .testimonial>.container>div>section{margin: 0px;}
+}
+
+/* TABLET VERSION */
+@media(min-width:769px) and (max-width:1200px){
+    .banner{
+        background: linear-gradient(rgba(55, 57, 69, 0.8), rgba(55, 57, 69, 0.8)), url(../images/tab.jpg)no-repeat center;
+        background-size: 202%;
+    }
+    .banner>header>.container{justify-content: center;}
+    .banner>header>nav{text-align: center;}
+}
